@@ -1,0 +1,16 @@
+[project]
+name = "tensorstore-spark-loader"
+version = "0.1.0"
+description = "Load Zarr data from S3 using TensorStore into Spark"
+authors = [{ name = "Your Name", email = "your.email@example.com" }]
+requires-python = ">=3.10"
+dependencies = [
+    "tensorstore==0.1.71",
+    "pyspark"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
